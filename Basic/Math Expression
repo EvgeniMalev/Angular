@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <p>My first expression: {{ squareRoot }}</p>
+    </div>
+
+    <div ng-controller="myCtrl1">
+        <p>My second expression: {{ squareRoot1 }}</p>
+    </div>
+    
+     <div ng-controller="myCtrl2">
+        <p>My third expression: {{ division }}</p>
+    </div>
+</div>
+
+<script>
+    angular.module('myApp', [])
+    .controller('myCtrl', function($scope) {
+        $scope.squareRoot = Math.sqrt(64);
+    })
+
+    .controller('myCtrl1', function($scope) {
+        $scope.squareRoot1 = Math.sqrt(16);
+    })
+    
+    .controller('myCtrl2', function($scope) {
+        $scope.division = 30 / 10;
+    });
+</script>
+
+</body>
+</html>
