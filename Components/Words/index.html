@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79be424806.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="wordlist">
+        <div class="header">
+            <h1>Word List</h1>
+            <input type="text" class="word-input" placeholder="Write your word here...">
+            <button class="btn-add">Add</button>
+        </div>
+        <div class="wordstable">
+            <h3>List of Words:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Words Beginning with Vowel</th>
+                        <th>Words Beginning with Consonant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="popup">
+        <h3>Edit your word:</h3>
+        <div class="popup-body">
+            <p class="popup-info"></p>
+            <input type="text" class="popup-input" placeholder="Enter new word...">
+            <button class="popup-btn accept">Update</button>
+            <button class="popup-btn cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
