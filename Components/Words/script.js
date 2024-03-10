@@ -42,14 +42,18 @@ const addNewWord = () => {
         const newRow = document.createElement('tr');
         const firstChar = wordInput.value.charAt(0);
         newRow.innerHTML = `
-            <td>${wordInput.value}</td>
+            <td></td>
             <td></td>
         `;
+        const wordCell = document.createElement('td');
+        wordCell.textContent = wordInput.value;
+        
         if (isVowel(firstChar)) {
-            newRow.children[0].classList.add('vowel-word');
+            newRow.children[0].appendChild(wordCell);
         } else {
-            newRow.children[0].classList.add('consonant-word');
+            newRow.children[1].appendChild(wordCell);
         }
+
         if (isVowel(firstChar)) {
             vowelList.appendChild(newRow);
         } else {
