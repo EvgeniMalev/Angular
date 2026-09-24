@@ -1,0 +1,36 @@
+
+<div class="container">
+
+  <h1>Регистър на хора</h1>
+
+  <div class="form">
+
+    <input
+      type="text"
+      [(ngModel)]="name"
+      placeholder="Въведете име">
+
+    <textarea
+      [(ngModel)]="info"
+      placeholder="Въведете информация">
+    </textarea>
+
+    <button (click)="addPerson()">
+      Добави
+    </button>
+
+  </div>
+
+  <hr>
+
+  <h2>Записи</h2>
+
+  <div *ngFor="let person of people" class="card">
+
+    <h3>{{ person.name }}</h3>
+
+    <p>{{ person.info }}</p>
+
+  </div>
+
+</div>
