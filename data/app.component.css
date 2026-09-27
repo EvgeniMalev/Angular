@@ -1,0 +1,31 @@
+
+.container {
+  width: 700px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
