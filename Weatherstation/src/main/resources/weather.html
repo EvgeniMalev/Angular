@@ -1,0 +1,67 @@
+
+<div class="container">
+
+  <h1>Weather Station</h1>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Temperature</th>
+        <th>Humidity</th>
+        <th>Pressure</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let w of weatherData">
+
+        <td>{{w.temperature}} °C</td>
+        <td>{{w.humidity}} %</td>
+        <td>{{w.pressure}} hPa</td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #4caf50;
+    color: white;
+}
+
+
+
+import { Routes } from '@angular/router';
+import { DashboardComponent }
+from './dashboard/dashboard.component';
+
+export const routes: Routes = [
+
+  {
+    path: '',
+    component: DashboardComponent
+  }
+
+];
